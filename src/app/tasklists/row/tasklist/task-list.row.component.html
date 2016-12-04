@@ -13,12 +13,14 @@
       <label class="taskListHeader"> Tasklists</label>
     </td>
     <td>
-      <button class="newButton" type="submit" onclick="window.location='/new_tasklist'">+</button>
+      <button class="newButton"
+              type="submit"
+              (click)="addTaskList()">+</button>
     </td>
   </tr>
-  <!--"
-  *-->
+  <add-task-list [show]="showAddTaskListForm"> </add-task-list>
   <tr *ngFor = "let t of taskLists; let num = index"
+
       [ngClass]="{separatorRow: true}" >
 
       <td >

@@ -11,6 +11,7 @@ import {TaskListService} from "./task-list.service";
 })
 export class TaskListRow implements OnInit{
 taskLists: TaskList[];
+showAddTaskListForm: boolean = false;
 
 constructor(private taskListService: TaskListService){}
 
@@ -21,4 +22,8 @@ getAll(){
 ngOnInit(){
   this.getAll();
 }
+addTaskList():void{
+  this.showAddTaskListForm = true;
+}
+
 }

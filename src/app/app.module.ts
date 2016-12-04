@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
 import {TaskListService} from "./tasklists/row/tasklist/task-list.service";
 import {TaskListRow} from "./tasklists/row/tasklist/task-list.row.component";
+import {AddTaskList} from "./tasklists/row/tasklist/add/add-task-list.component";
 
 @NgModule({
   declarations: [
-    TaskListRow
+    TaskListRow,
+    AddTaskList
   ],
   imports: [
     BrowserModule,
