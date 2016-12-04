@@ -13,9 +13,12 @@
       <label class="taskListHeader"> Tasklists</label>
     </td>
     <td>
-      <button class="newButton"
-              type="submit"
-              (click)="addTaskList()">+</button>
+      <a [routerLink]="['addTaskList']">
+        <button class="newButton"
+                type="submit"
+                (click)="showTaskListAdder()">+
+        </button>
+      </a>
     </td>
   </tr>
   <add-task-list [show]="showAddTaskListForm"> </add-task-list>

@@ -1,7 +1,14 @@
 <tr *ngIf="show">
 <td colspan="2">
+  <button class="closeButton"
+          type="submit"
+          (click)="closeTaskListAdder()">x
+  </button>
   <input type="text" placeholder=""/>
 </td>
 <td></td>
-<td></td>
+<td>
+  <button type="submit"
+  (click)="saveTaskList()">save</button>
+</td>
 </tr>
