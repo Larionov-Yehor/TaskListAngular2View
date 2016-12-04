@@ -4,17 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {TaskListService} from "./tasklists/row/tasklist/task-list.service";
+import {TaskListRow} from "./tasklists/row/tasklist/task-list.row.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    TaskListRow
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [TaskListService],
+  bootstrap: [TaskListRow]
 })
 export class AppModule { }

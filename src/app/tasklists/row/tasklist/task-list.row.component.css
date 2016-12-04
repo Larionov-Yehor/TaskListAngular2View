@@ -1,0 +1,55 @@
+a:link{
+  text-decoration: none;
+}
+
+.taskListHeader{
+  horiz-align: center;
+  vertical-align: center;
+  color:white;
+  font-size: 22px;
+  font-weight: normal;
+  border: 0px transparent;
+}
+.header{
+  background-color: #2172ce;
+  border: 0px transparent;
+}
+
+.newButton {
+  background-color:transparent;
+  color:white;
+  border-color:transparent;
+  font-weight: bold;
+  font-size: 30px;
+}
+.backButton {
+  background-color:transparent;
+  color: white;
+  border-color:transparent;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.taskListName{
+  horiz-align: center;
+  vertical-align: center;
+  color: #3a3a3a;
+  font-size: 18px;
+}
+.deleteListButton {
+  background-color:transparent;
+  color:black;
+  border-color:transparent;
+  font-weight: bold;
+  font-size: 22px;
+  horiz-align: center;
+
+}
+.separatorRow{
+  background-color: #f9f9f9;
+}
+
+
+table{
+  width: 30%;
+}

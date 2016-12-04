@@ -1,0 +1,36 @@
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+<table  border="0" cellspacing="0" cellpadding="0">
+
+  <tr class="header"  align="middle" valign="middle">
+    <td colspan="2"  align="middle" valign="middle">
+      <label class="taskListHeader"> Tasklists</label>
+    </td>
+    <td>
+      <button class="newButton" type="submit" onclick="window.location='/new_tasklist'">+</button>
+    </td>
+  </tr>
+  <!--"
+  *-->
+  <tr *ngFor = "let t of taskLists; let num = index"
+      [ngClass]="{separatorRow: true}" >
+
+      <td >
+        {{t.name}}
+      </td>
+      <td>
+      </td>
+      <td align="center">
+        <button class="deleteListButton" type="submit">-</button>
+      </td>
+    </tr>
+
+</table>
+</body>
+</html>
