@@ -8,7 +8,7 @@ import { TaskListService } from "./tasklists/row/tasklist/task-list.service";
   providers: [ TaskListService ]
 })
 export class AppComponent {
-
+  title2 = 'kikiki';
   title = 'app works!';
 
 }
